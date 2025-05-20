@@ -58,13 +58,11 @@ practice_problems = [
     {"smiles": "C", "name": "methane", "condensed": "CH4", "category": "Straight-chain Alkane", "difficulty": "Easy"},
     {"smiles": "CC", "name": "ethane", "condensed": "CH3CH3", "category": "Straight-chain Alkane", "difficulty": "Easy"},
     {"smiles": "CCC", "name": "propane", "condensed": "CH3CH2CH3", "category": "Straight-chain Alkane", "difficulty": "Easy"},
-    {"smiles": "CCCC", "name": "butane", "condensed": "CH3CH2CH2CH3", "category": "Straight-chain Alkane", "difficulty": "Easy"},
-    {"smiles": "CCCCC", "name": "pentane", "condensed": "CH3(CH2)3CH3", "category": "Straight-chain Alkane", "difficulty": "Easy"},
+    {"smiles": "CCCC", "name": "butane", "condensed": "CH3CH2CH2CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
+    {"smiles": "CCCCC", "name": "pentane", "condensed": "CH3(CH2)3CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
     {"smiles": "CCCCCC", "name": "hexane", "condensed": "CH3(CH2)4CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
-    {"smiles": "CCCCCCC", "name": "heptane", "condensed": "CH3(CH2)5CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
-    {"smiles": "CCCCCCCC", "name": "octane", "condensed": "CH3(CH2)6CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
-    {"smiles": "CCCCCCCCC", "name": "nonane", "condensed": "CH3(CH2)7CH3", "category": "Straight-chain Alkane", "difficulty": "Hard"},
-    {"smiles": "CCCCCCCCCC", "name": "decane", "condensed": "CH3(CH2)8CH3", "category": "Straight-chain Alkane", "difficulty": "Hard"},
+    {"smiles": "CCCCCCC", "name": "heptane", "condensed": "CH3(CH2)5CH3", "category": "Straight-chain Alkane", "difficulty": "Difficult"},
+    {"smiles": "CCCCCCCC", "name": "octane", "condensed": "CH3(CH2)6CH3", "category": "Straight-chain Alkane", "difficulty": "Difficult"},
 
     # === Branched Alkane ===
     {"smiles": "CC(C)C", "name": "2-methylpropane", "condensed": "CH3CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Easy"},
@@ -147,11 +145,6 @@ practice_problems = [
     {"smiles": "C=CI", "name": "iodoethene", "condensed": "CH2=CHI", "category": "Mixed Functional Groups", "difficulty": "Easy"}, # Added iodo
     {"smiles": "ClC=CCl", "name": "1,2-dichloroethene", "condensed": "CHCl=CHCl", "category": "Mixed Functional Groups", "difficulty": "Medium"},
     {"smiles": "C=CCBr", "name": "3-bromoprop-1-ene", "condensed": "CH2=CHCH2Br", "category": "Mixed Functional Groups", "difficulty": "Medium"},
-
-    # Carboxylic Acid + Alkanol (Hydroxy Acids)
-    {"smiles": "OCC(=O)O", "name": "hydroxyethanoic acid", "condensed": "HOCH2COOH", "category": "Mixed Functional Groups", "difficulty": "Medium"},
-    {"smiles": "CC(O)C(=O)O", "name": "2-hydroxypropanoic acid", "condensed": "CH3CH(OH)COOH", "category": "Mixed Functional Groups", "difficulty": "Medium"},
-    {"smiles": "CCC(O)C(=O)O", "name": "2-hydroxybutanoic acid", "condensed": "CH3CH2CH(OH)COOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
 
     # Carboxylic Acid + Alkene (Unsaturated Acids)
     {"smiles": "C=CC(=O)O", "name": "propenoic acid", "condensed": "CH2=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Medium"},
