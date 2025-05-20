@@ -582,7 +582,7 @@ def load_current_problem_details():
 # --- Main App Display Logic ---
 
 def display_setup_page_st():
-    st.header("🧪 Organic Chemistry Nomenclature Quiz Setup")
+    st.header("🧪 Organic Chemistry Nomenclature Practice Setup")
     st.markdown("---")
 
     # Get unique categories and difficulties, maintaining original order of appearance
@@ -652,7 +652,7 @@ def display_setup_page_st():
                 st.error(f"{len(invalid_entries)} invalid SMILES entries found. Details in log above.")
                 
 def display_quiz_page_st():
-    st.header("🧠 IUPAC Nomenclature Quiz")
+    st.header("🧠 IUPAC Nomenclature Practice")
     
     # Ensure problem details are loaded if somehow missed (e.g., after a direct URL visit to quiz page)
     if not st.session_state.current_mol_smiles and \
