@@ -626,7 +626,7 @@ def display_setup_page_st():
           step=1
       )
 
-    if st.button("🚀 Start Quiz", type="primary", use_container_width=True):
+    if st.button("🚀 Start Practice", type="primary", use_container_width=True):
         setup_new_quiz_st()
         # Only rerun if app_stage actually changed to 'quiz'.
         # If setup_new_quiz_st returned early due to errors, we don't want to rerun into quiz.
@@ -715,7 +715,7 @@ def display_quiz_page_st():
 
         next_button_text = "➡️ Next Problem"
         if st.session_state.problem_index + 1 >= st.session_state.total_problems_in_quiz:
-            next_button_text = "🏁 Finish Quiz"
+            next_button_text = "🏁 Finish Practice"
         
         # --- THIS IS THE CRITICAL CHANGE ---
         st.button(
