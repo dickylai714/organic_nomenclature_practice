@@ -4,10 +4,11 @@ import base64 # Still used by original format_condensed_formula_html if needed, 
 from io import BytesIO # Same as above
 import random
 import re
-from rdkit import Chem
-from rdkit.Chem import Draw
-from rdkit.Chem.AllChem import Compute2DCoords
-from rdkit.Chem.Draw import rdMolDraw2D # For MolDrawOptions
+import rdkit
+# from rdkit import Chem
+# from rdkit.Chem import Draw
+# from rdkit.Chem.AllChem import Compute2DCoords
+# from rdkit.Chem.Draw import rdMolDraw2D # For MolDrawOptions
 
 # For Google GenAI
 from google import genai
