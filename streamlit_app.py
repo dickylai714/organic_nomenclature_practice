@@ -318,7 +318,7 @@ def get_ai_nomenclature_explanation_st(student_answer, correct_iupac_name, smile
 
     Provide a step-by-step breakdown of how to name this compound correctly, and for each step, evaluate if the student's answer reflects understanding of that step.
     Give the general comment in the first sentence, then use the following format for each step:
-    - "Step X: [Description of the nomenclature step, e.g., Identify the principal functional group and parent chain.] If correct, (✅). If incorrect (❌)"
+    - "Step X: [Description of the nomenclature step, e.g., Identify the principal functional group and parent chain.] [If correct, (✅). If incorrect (❌)]"
     - "Comment: [If incorrect (❌), provide a concise, one-sentence explanation of what the student likely did wrong for THIS SPECIFIC STEP, relating it to their answer and the correct name. If correct (✅) , leave the comment blank"]"
 
     Consider these common nomenclature steps (adapt them as needed based on the complexity of the molecule from the SMILES string):
