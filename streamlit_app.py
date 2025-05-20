@@ -5,10 +5,10 @@ from io import BytesIO # Same as above
 import random
 import re
 import rdkit
-# from rdkit import Chem
-# from rdkit.Chem import Draw
-# from rdkit.Chem.AllChem import Compute2DCoords
-# from rdkit.Chem.Draw import rdMolDraw2D # For MolDrawOptions
+from rdkit import Chem
+from rdkit.Chem import Draw
+from rdkit.Chem.AllChem import Compute2DCoords
+from rdkit.Chem.Draw import rdMolDraw2D # For MolDrawOptions
 
 # For Google GenAI
 from google import genai
@@ -20,7 +20,6 @@ from google import genai
 # GENAI_API_KEY = "YOUR_API_KEY"
 
 st.set_page_config(page_title="Chemistry Quiz", layout="wide", initial_sidebar_state="collapsed")
-
 
 try:
     api_key_to_use = st.secrets.get("GENAI_API_KEY")
