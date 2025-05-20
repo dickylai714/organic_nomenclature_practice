@@ -1,0 +1,5 @@
+libxrender1
+libcairo2
+libpng16-16
+libfreetype6
+libfontconfig1
