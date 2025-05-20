@@ -30,7 +30,7 @@ jupyterlab_widgets==3.0.15
 MarkupSafe==3.0.2
 matplotlib-inline==0.1.7
 narwhals==1.40.0
-numpy==2.2.6
+numpy<2.0
 packaging==24.2
 pandas==2.2.3
 parso==0.8.4
@@ -49,7 +49,7 @@ pydeck==0.9.1
 Pygments==2.19.1
 python-dateutil==2.9.0.post0
 pytz==2025.2
-rdkit==2025.3.2
+rdkit-pypi==2022.9.5
 referencing==0.36.2
 requests==2.32.3
 rpds-py==0.25.0
@@ -71,4 +71,3 @@ watchdog==6.0.0
 wcwidth==0.2.13
 websockets==15.0.1
 widgetsnbextension==4.0.14
-
