@@ -30,7 +30,7 @@ jupyterlab_widgets==3.0.15
 MarkupSafe==3.0.2
 matplotlib-inline==0.1.7
 narwhals==1.40.0
-numpy==2.2.6
+numpy==1.24.3
 packaging==24.2
 pandas==2.2.3
 parso==0.8.4
