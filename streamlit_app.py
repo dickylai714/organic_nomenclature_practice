@@ -4,7 +4,6 @@ import base64 # Still used by original format_condensed_formula_html if needed, 
 from io import BytesIO # Same as above
 import random
 import re
-import rdkit
 from rdkit import Chem
 from rdkit.Chem import Draw
 from rdkit.Chem.AllChem import Compute2DCoords
