@@ -731,9 +731,10 @@ def display_quiz_page_st():
                     st.markdown(st.session_state.ai_explanation, unsafe_allow_html=True)
     
     st.markdown("---")
-    if st.button("New Quiz Setup / Quit Current Quiz", key="quit_quiz_btn"):
+    if st.button("New Practice Setup / Quit Current Practice", key="quit_quiz_btn"):
         # Reset relevant session state for a clean start
         keys_to_clear_for_new_quiz = [
+            
             'quiz_problems_list', 'problem_index', 'total_problems_in_quiz', 
             'current_score', 'current_mol_smiles', 'current_correct_name', 
             'current_alternative_names', 'student_answer', 'is_current_problem_answered',
