@@ -18,6 +18,10 @@ from google import genai
 # IMPORTANT: For Streamlit, it's better to manage API keys using st.secrets
 # Create a .streamlit/secrets.toml file with:
 # GENAI_API_KEY = "YOUR_API_KEY"
+
+st.set_page_config(page_title="Chemistry Quiz", layout="wide", initial_sidebar_state="collapsed")
+
+
 try:
     api_key_to_use = st.secrets.get("GENAI_API_KEY")
     gemini_model_name = st.secrets.get("GENAI_MODEL_NAME", "gemini-2.0-flash") # Allow model override via secrets
@@ -792,7 +796,6 @@ def display_results_page_st():
 
 # --- App Router ---
 if __name__ == "__main__":
-    st.set_page_config(page_title="Chemistry Quiz", layout="wide", initial_sidebar_state="collapsed")
     
     if 'app_stage' not in st.session_state:
         initialize_session_state()
