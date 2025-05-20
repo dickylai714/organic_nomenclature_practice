@@ -23,7 +23,7 @@ try:
 
     if not api_key_to_use:
         # Fallback to your provided key if not in secrets - use with caution
-        api_key_to_use = "AIzaSyCnIL_-spKcqldsFV_yOWJs6eaPw_mkPQA" # YOUR PROVIDED KEY
+        api_key_to_use = "" # YOUR PROVIDED KEY
         st.warning(
             "⚠️ Using a hardcoded API key from the original script. "
             "For security and best practice, please set `GENAI_API_KEY` in Streamlit Secrets. "
