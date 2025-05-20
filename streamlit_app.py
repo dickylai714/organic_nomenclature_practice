@@ -61,8 +61,8 @@ practice_problems = [
     {"smiles": "CCCC", "name": "butane", "condensed": "CH3CH2CH2CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
     {"smiles": "CCCCC", "name": "pentane", "condensed": "CH3(CH2)3CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
     {"smiles": "CCCCCC", "name": "hexane", "condensed": "CH3(CH2)4CH3", "category": "Straight-chain Alkane", "difficulty": "Medium"},
-    {"smiles": "CCCCCCC", "name": "heptane", "condensed": "CH3(CH2)5CH3", "category": "Straight-chain Alkane", "difficulty": "Difficult"},
-    {"smiles": "CCCCCCCC", "name": "octane", "condensed": "CH3(CH2)6CH3", "category": "Straight-chain Alkane", "difficulty": "Difficult"},
+    {"smiles": "CCCCCCC", "name": "heptane", "condensed": "CH3(CH2)5CH3", "category": "Straight-chain Alkane", "difficulty": "Hard"},
+    {"smiles": "CCCCCCCC", "name": "octane", "condensed": "CH3(CH2)6CH3", "category": "Straight-chain Alkane", "difficulty": "Hard"},
 
     # === Branched Alkane ===
     {"smiles": "CC(C)C", "name": "2-methylpropane", "condensed": "CH3CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Easy"},
