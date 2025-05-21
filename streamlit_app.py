@@ -65,7 +65,7 @@ practice_problems = [
     {"smiles": "CCCCCCCC", "name": "octane", "condensed": "CH3(CH2)6CH3", "category": "Straight-chain Alkane", "difficulty": "Hard"},
 
     # === Branched Alkane ===
-    {"smiles": "CC(C)C", "name": "2-methylpropane", "condensed": "CH3CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Easy"},
+    {"smiles": "CC(C)C", "name": "2-methylpropane", "condensed": "CH3CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Easy", "alternative_names": ["methylpropane"]},
     {"smiles": "CC(C)CC", "name": "2-methylbutane", "condensed": "CH3CH(CH3)CH2CH3", "category": "Branched Alkane", "difficulty": "Medium"},
     {"smiles": "CCC(C)CC", "name": "3-methylpentane", "condensed": "CH3CH2CH(CH3)CH2CH3", "category": "Branched Alkane", "difficulty": "Medium"},
     {"smiles": "CC(C)(C)C", "name": "2,2-dimethylpropane", "condensed": "C(CH3)4", "category": "Branched Alkane", "difficulty": "Medium"},
@@ -73,7 +73,7 @@ practice_problems = [
     {"smiles": "CC(C)C(C)C", "name": "2,3-dimethylbutane", "condensed": "CH3CH(CH3)CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Hard"},
     {"smiles": "CCC(C)(C)CC", "name": "3,3-dimethylpentane", "condensed": "CH3CH2C(CH3)2CH2CH3", "category": "Branched Alkane", "difficulty": "Hard"},
     {"smiles": "CC(C)CC(C)C", "name": "2,4-dimethylpentane", "condensed": "CH3CH(CH3)CH2CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Hard"},
-    {"smiles": "CCC(CC)CCC", "name": "4-ethylheptane", "condensed": "CH3CH2CH2CH(CH2CH3)CH2CH2CH3", "category": "Branched Alkane", "difficulty": "Hard"},
+    {"smiles": "CCC(CC)CCC", "name": "3-ethylhexane", "condensed": "CH3CH2CH2CH(CH2CH3)CH2CH2CH3", "category": "Branched Alkane", "difficulty": "Hard"},
     {"smiles": "CC(C)(C)CC(C)C", "name": "2,2,4-trimethylpentane", "condensed": "(CH3)3CCH2CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Hard"},
 
     # === Alkene === (Includes straight and branched)
@@ -110,8 +110,8 @@ practice_problems = [
     {"smiles": "CC(O)C", "name": "propan-2-ol", "condensed": "CH3CH(OH)CH3", "category": "Alkanol", "difficulty": "Medium"},
     {"smiles": "CCCCO", "name": "butan-1-ol", "condensed": "CH3CH2CH2CH2OH", "category": "Alkanol", "difficulty": "Medium"},
     {"smiles": "CC(O)CC", "name": "butan-2-ol", "condensed": "CH3CH(OH)CH2CH3", "category": "Alkanol", "difficulty": "Medium"},
-    {"smiles": "CC(C)(O)C", "name": "2-methylpropan-2-ol", "condensed": "(CH3)3COH", "category": "Alkanol", "difficulty": "Hard"},
-    {"smiles": "CC(C)CO", "name": "2-methylpropan-1-ol", "condensed": "CH3CH(CH3)CH2OH", "category": "Alkanol", "difficulty": "Hard"},
+    {"smiles": "CC(C)(O)C", "name": "2-methylpropan-2-ol", "condensed": "(CH3)3COH", "category": "Alkanol", "difficulty": "Hard","alternative_names": ["methylpropan-2-ol"]},
+    {"smiles": "CC(C)CO", "name": "2-methylpropan-1-ol", "condensed": "CH3CH(CH3)CH2OH", "category": "Alkanol", "difficulty": "Hard","alternative_names": ["methylpropan-1-ol"]},
     {"smiles": "CCC(O)CC", "name": "pentan-3-ol", "condensed": "CH3CH2CH(OH)CH2CH3", "category": "Alkanol", "difficulty": "Hard"},
     {"smiles": "CC(O)C(O)C", "name": "butane-2,3-diol", "condensed": "CH3CH(OH)CH(OH)CH3", "category": "Alkanol", "difficulty": "Hard"},
 
@@ -160,8 +160,7 @@ practice_problems = [
     # More challenging combinations without primary ketones
     {"smiles": "ClC=CC(O)C", "name": "1-chlorobut-1-en-3-ol", "condensed": "ClCH=CHCH(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     {"smiles": "CC(Br)=CC(=O)O", "name": "3-bromobut-2-enoic acid", "condensed": "CH3C(Br)=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
-    {"smiles": "OCC(Cl)C=C", "name": "3-chlorobut-3-en-1-ol", "condensed": "HOCH2CH(Cl)C=CH2", "category": "Mixed Functional Groups", "difficulty": "Hard"},
-    {"smiles": "CC(O)C(C)C(=O)O", "name": "2-hydroxy-3-methylbutanoic acid", "condensed": "CH3CH(OH)CH(CH3)COOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
+    {"smiles": "OCC(Cl)C=C", "name": "2-chlorobut-3-en-1-ol", "condensed": "HOCH2CH(Cl)CH=CH2", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     {"smiles": "C=C(Cl)C(C)(O)C", "name": "3-chloro-2-methylbut-3-en-2-ol", "condensed": "CH2=C(Cl)C(CH3)(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"}, # Corrected from before
     {"smiles": "BrC(C)=CC(O)C", "name": "4-bromopent-3-en-2-ol", "condensed": "BrCH(CH3)C=CHCH(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     {"smiles": "CC(O)C=C(Br)C", "name": "4-bromopent-3-en-2-ol", "condensed": "CH3CH(OH)CH=C(Br)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"},
