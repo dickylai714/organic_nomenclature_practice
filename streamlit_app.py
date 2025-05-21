@@ -162,8 +162,7 @@ practice_problems = [
     {"smiles": "CC(Br)=CC(=O)O", "name": "3-bromobut-2-enoic acid", "condensed": "CH3C(Br)=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     {"smiles": "OCC(Cl)C=C", "name": "2-chlorobut-3-en-1-ol", "condensed": "HOCH2CH(Cl)CH=CH2", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     {"smiles": "C=C(Cl)C(C)(O)C", "name": "3-chloro-2-methylbut-3-en-2-ol", "condensed": "CH2=C(Cl)C(CH3)(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"}, # Corrected from before
-    {"smiles": "BrC(C)=CC(O)C", "name": "4-bromopent-3-en-2-ol", "condensed": "BrCH(CH3)C=CHCH(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"},
-    {"smiles": "CC(O)C=C(Br)C", "name": "4-bromopent-3-en-2-ol", "condensed": "CH3CH(OH)CH=C(Br)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"},
+    {"smiles": "BrC(C)=CC(O)C", "name": "4-bromopent-3-en-2-ol", "condensed": "BrCH(CH3)CH=CHCH(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"},
 
     # Additional Mixed Examples
     {"smiles": "CCC(O)C=C", "name": "pent-1-en-3-ol", "condensed": "CH3CH2CH(OH)CH=CH2", "category": "Mixed Functional Groups", "difficulty": "Medium"},
