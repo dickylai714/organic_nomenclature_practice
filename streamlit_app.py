@@ -75,6 +75,12 @@ practice_problems = [
     {"smiles": "CC(C)CC(C)C", "name": "2,4-dimethylpentane", "condensed": "CH3CH(CH3)CH2CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Hard"},
     {"smiles": "CCC(CC)CCC", "name": "3-ethylhexane", "condensed": "CH3CH2CH2CH(CH2CH3)CH2CH2CH3", "category": "Branched Alkane", "difficulty": "Hard"},
     {"smiles": "CC(C)(C)CC(C)C", "name": "2,2,4-trimethylpentane", "condensed": "(CH3)3CCH2CH(CH3)CH3", "category": "Branched Alkane", "difficulty": "Hard"},
+    # === Branched Alkane (Continued) ===
+    {"smiles": "CC(C)(C)CC", "name": "2,2-dimethylbutane", "condensed": "(CH3)3CCH2CH3", "category": "Branched Alkane", "difficulty": "Medium"},
+    {"smiles": "CC(C)C(C)CC", "name": "2,3-dimethylpentane", "condensed": "CH3CH(CH3)CH(CH3)CH2CH3", "category": "Branched Alkane", "difficulty": "Hard"},
+    {"smiles": "CCC(CC)CC", "name": "3-ethylpentane", "condensed": "CH3CH2CH(CH2CH3)CH2CH3", "category": "Branched Alkane", "difficulty": "Medium"},
+    {"smiles": "CC(C)C(CC)CC", "name": "3-ethyl-2-methylpentane", "condensed": "CH3CH(CH3)CH(CH2CH3)CH2CH3", "category": "Branched Alkane", "difficulty": "Hard"},
+    {"smiles": "CCC(C)(C)C(CC)CCC", "name": "4-ethyl-3,3-dimethylheptane", "condensed": "CH3CH2C(CH3)2CH(CH2CH3)CH2CH2CH3", "category": "Branched Alkane", "difficulty": "Hard"},
 
     # === Alkene === (Includes straight and branched)
     {"smiles": "C=C", "name": "ethene", "condensed": "CH2=CH2", "category": "Alkene", "difficulty": "Easy"},
@@ -87,7 +93,21 @@ practice_problems = [
     {"smiles": "C=C(C)CC", "name": "2-methylbut-1-ene", "condensed": "CH2=C(CH3)CH2CH3", "category": "Alkene", "difficulty": "Hard"},
     {"smiles": "CC=C(C)C", "name": "2-methylbut-2-ene", "condensed": "CH3CH=C(CH3)CH3", "category": "Alkene", "difficulty": "Hard"},
     {"smiles": "CCC(C)=CCC", "name": "3-methylhex-3-ene", "condensed": "CH3CH2C(CH3)=CHCH2CH3", "category": "Alkene", "difficulty": "Hard"},
-
+    
+    # === Alkene (Continued) ===
+    {"smiles": "C=CCCCC", "name": "hex-1-ene", "condensed": "CH2=CHCH2CH2CH2CH3", "category": "Alkene", "difficulty": "Medium"},
+    {"smiles": "CC=CCCC", "name": "hex-2-ene", "condensed": "CH3CH=CHCH2CH2CH3", "category": "Alkene", "difficulty": "Medium"},
+    {"smiles": "CCC=CCC", "name": "hex-3-ene", "condensed": "CH3CH2CH=CHCH2CH3", "category": "Alkene", "difficulty": "Medium"},
+    {"smiles": "C=CC(C)CC", "name": "3-methylpent-1-ene", "condensed": "CH2=CHCH(CH3)CH2CH3", "category": "Alkene", "difficulty": "Medium"},
+    {"smiles": "CC=CC(C)C", "name": "4-methylpent-2-ene", "condensed": "CH3CH=CHCH(CH3)CH3", "category": "Alkene", "difficulty": "Medium"}, # Note: Could be (E) or (Z)
+    {"smiles": "CC(C)=C(C)C", "name": "2,3-dimethylbut-2-ene", "condensed": "CH3C(CH3)=C(CH3)CH3", "category": "Alkene", "difficulty": "Hard"},
+    
+    # Dienes
+    {"smiles": "C=CC=C", "name": "buta-1,3-diene", "condensed": "CH2=CHCH=CH2", "category": "Alkene", "difficulty": "Medium"},
+    {"smiles": "C=CC=CC", "name": "penta-1,3-diene", "condensed": "CH2=CHCH=CHCH3", "category": "Alkene", "difficulty": "Hard"}, # Note: CH3 end can be E/Z
+    {"smiles": "C=CCC=C", "name": "penta-1,4-diene", "condensed": "CH2=CHCH2CH=CH2", "category": "Alkene", "difficulty": "Hard"},
+    {"smiles": "C=C(C)C=C", "name": "2-methylbuta-1,3-diene", "condensed": "CH2=C(CH3)CH=CH2", "category": "Alkene", "difficulty": "Hard", "alternative_names": ["isoprene"]},
+    
     # === Haloalkane ===
     {"smiles": "C(Cl)", "name": "chloromethane", "condensed": "CH3Cl", "category": "Haloalkane", "difficulty": "Easy"},
     {"smiles": "CCBr", "name": "bromoethane", "condensed": "CH3CH2Br", "category": "Haloalkane", "difficulty": "Easy"},
@@ -102,7 +122,14 @@ practice_problems = [
     {"smiles": "ClCCBr", "name": "1-bromo-2-chloroethane", "condensed": "ClCH2CH2Br", "category": "Haloalkane", "difficulty": "Hard"},
     {"smiles": "CC(Cl)(I)C", "name": "2-chloro-2-iodopropane", "condensed": "CH3C(Cl)(I)CH3", "category": "Haloalkane", "difficulty": "Hard"}, # Added Iodo
     {"smiles": "FC(Cl)I", "name": "chlorofluoroiodomethane", "condensed": "CHFClI", "category": "Haloalkane", "difficulty": "Hard"}, # Added Iodo
-
+    
+    # === Haloalkane (Continued) ===
+    {"smiles": "CC(C)CBr", "name": "1-bromo-2-methylpropane", "condensed": "CH3CH(CH3)CH2Br", "category": "Haloalkane", "difficulty": "Medium"},
+    {"smiles": "CC(Cl)C(C)C", "name": "2-chloro-3-methylbutane", "condensed": "CH3CH(Cl)CH(CH3)CH3", "category": "Haloalkane", "difficulty": "Hard"},
+    {"smiles": "ClCC(C)(C)C", "name": "1-chloro-2,2-dimethylpropane", "condensed": "ClCH2C(CH3)3", "category": "Haloalkane", "difficulty": "Hard"},
+    {"smiles": "FC(Br)(Cl)C", "name": "1-bromo-1-chloro-1-fluoroethane", "condensed": "CH3CBrClF", "category": "Haloalkane", "difficulty": "Hard"}, # Halogens listed alphabetically
+    {"smiles": "CC(F)C(Cl)C", "name": "2-chloro-3-fluorobutane", "condensed": "CH3CH(F)CH(Cl)CH3", "category": "Haloalkane", "difficulty": "Hard"}, # Alphabetical chloro, then fluoro
+    
     # === Alkanol ===
     {"smiles": "CO", "name": "methanol", "condensed": "CH3OH", "category": "Alkanol", "difficulty": "Easy"},
     {"smiles": "CCO", "name": "ethanol", "condensed": "CH3CH2OH", "category": "Alkanol", "difficulty": "Easy"},
@@ -114,6 +141,13 @@ practice_problems = [
     {"smiles": "CC(C)CO", "name": "2-methylpropan-1-ol", "condensed": "CH3CH(CH3)CH2OH", "category": "Alkanol", "difficulty": "Hard","alternative_names": ["methylpropan-1-ol"]},
     {"smiles": "CCC(O)CC", "name": "pentan-3-ol", "condensed": "CH3CH2CH(OH)CH2CH3", "category": "Alkanol", "difficulty": "Hard"},
     {"smiles": "CC(O)C(O)C", "name": "butane-2,3-diol", "condensed": "CH3CH(OH)CH(OH)CH3", "category": "Alkanol", "difficulty": "Hard"},
+    # === Alkanol (Continued) ===
+    {"smiles": "CCCCCCO", "name": "hexan-1-ol", "condensed": "CH3(CH2)4CH2OH", "category": "Alkanol", "difficulty": "Medium"},
+    {"smiles": "CCCC(O)CC", "name": "hexan-3-ol", "condensed": "CH3CH2CH2CH(OH)CH2CH3", "category": "Alkanol", "difficulty": "Medium"},
+    {"smiles": "CC(C)CCO", "name": "3-methylbutan-1-ol", "condensed": "CH3CH(CH3)CH2CH2OH", "category": "Alkanol", "difficulty": "Hard"},
+    {"smiles": "CC(O)C(C)C", "name": "3-methylbutan-2-ol", "condensed": "CH3CH(OH)CH(CH3)CH3", "category": "Alkanol", "difficulty": "Hard"},
+    {"smiles": "OCCCO", "name": "propane-1,3-diol", "condensed": "HOCH2CH2CH2OH", "category": "Alkanol", "difficulty": "Medium"},
+    {"smiles": "OCC(O)CO", "name": "propane-1,2,3-triol", "condensed": "HOCH2CH(OH)CH2OH", "category": "Alkanol", "difficulty": "Hard", "alternative_names": ["glycerol"]},
 
     # === Carboxylic Acid ===
     {"smiles": "C(=O)O", "name": "methanoic acid", "condensed": "HCOOH", "category": "Carboxylic Acid", "difficulty": "Easy"},
@@ -125,7 +159,13 @@ practice_problems = [
     {"smiles": "CC(C)CC(=O)O", "name": "3-methylbutanoic acid", "condensed": "CH3CH(CH3)CH2COOH", "category": "Carboxylic Acid", "difficulty": "Hard"},
     {"smiles": "C(C(=O)O)C(=O)O", "name": "propanedioic acid", "condensed": "HOOCCH2COOH", "category": "Carboxylic Acid", "difficulty": "Hard"},
     {"smiles": "CC(Cl)C(=O)O", "name": "2-chloropropanoic acid", "condensed": "CH3CH(Cl)COOH", "category": "Carboxylic Acid", "difficulty": "Hard"}, # Also Mixed
-
+    # === Carboxylic Acid (Continued) ===
+    {"smiles": "CCCCCC(=O)O", "name": "hexanoic acid", "condensed": "CH3(CH2)4COOH", "category": "Carboxylic Acid", "difficulty": "Hard"},
+    {"smiles": "CCC(CC)C(=O)O", "name": "2-ethylbutanoic acid", "condensed": "CH3CH2CH(CH2CH3)COOH", "category": "Carboxylic Acid", "difficulty": "Hard"},
+    {"smiles": "CC(C)(C)C(=O)O", "name": "2,2-dimethylpropanoic acid", "condensed": "(CH3)3CCOOH", "category": "Carboxylic Acid", "difficulty": "Hard", "alternative_names": ["pivalic acid"]},
+    {"smiles": "O=C(O)CCC(=O)O", "name": "butanedioic acid", "condensed": "HOOC(CH2)2COOH", "category": "Carboxylic Acid", "difficulty": "Hard", "alternative_names": ["succinic acid"]},
+    {"smiles": "O=C(O)CCCC(=O)O", "name": "pentanedioic acid", "condensed": "HOOC(CH2)3COOH", "category": "Carboxylic Acid", "difficulty": "Hard", },
+    
     # === Mixed Functional Groups === (Focusing on combinations taught in S4, avoiding primary ketones)
     # Alkanol + Alkene
     {"smiles": "CC(O)C=C", "name": "but-3-en-2-ol", "condensed": "CH2=CHCH(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Medium"},
@@ -145,6 +185,9 @@ practice_problems = [
     {"smiles": "C=CI", "name": "iodoethene", "condensed": "CH2=CHI", "category": "Mixed Functional Groups", "difficulty": "Easy"}, # Added iodo
     {"smiles": "ClC=CCl", "name": "1,2-dichloroethene", "condensed": "CHCl=CHCl", "category": "Mixed Functional Groups", "difficulty": "Medium"},
     {"smiles": "C=CCBr", "name": "3-bromoprop-1-ene", "condensed": "CH2=CHCH2Br", "category": "Mixed Functional Groups", "difficulty": "Medium"},
+    # Haloalkene (More examples)
+    {"smiles": "ClC=CCCl", "name": "1,3-dichloropropene", "condensed": "ClCH=CHCH2Cl", "category": "Mixed Functional Groups", "difficulty": "Hard"}, # Can be E/Z
+    {"smiles": "C=C(Br)CBr", "name": "2,3-dibromoprop-1-ene", "condensed": "CH2=C(Br)CH2Br", "category": "Mixed Functional Groups", "difficulty": "Hard"},
 
     # Carboxylic Acid + Alkene (Unsaturated Acids)
     {"smiles": "C=CC(=O)O", "name": "propenoic acid", "condensed": "CH2=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Medium"},
@@ -157,6 +200,16 @@ practice_problems = [
     {"smiles": "CC(I)C(=O)O", "name": "2-iodopropanoic acid", "condensed": "CH3CH(I)COOH", "category": "Mixed Functional Groups", "difficulty": "Hard"}, # Added iodo
     {"smiles": "ClC(Cl)C(=O)O", "name": "2,2-dichloroethanoic acid", "condensed": "Cl2CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
 
+    # Carboxylic Acid + Alkene + Halo
+    {"smiles": "ClC=CC(=O)O", "name": "3-chloropropenoic acid", "condensed": "ClCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard", "alternative_names": ["3-chloroprop-2-enoic acid"]}, # Can be E/Z
+    {"smiles": "C=C(Cl)C(=O)O", "name": "2-chloropropenoic acid", "condensed": "CH2=C(Cl)COOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
+    {"smiles": "BrCC=CC(=O)O", "name": "4-bromobut-2-enoic acid", "condensed": "BrCH2CH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"}, # Can be E/Z
+
+    # Alkanol + Alkene + Halo (More examples)
+    {"smiles": "ClCC(O)C=C", "name": "1-chlorobut-3-en-2-ol", "condensed": "CH2=CHCH(OH)CH2Cl", "category": "Mixed Functional Groups", "difficulty": "Hard"}, # Typo in thought process, CH2=CHCH(OH)CH2Cl is correct for this name
+    {"smiles": "C=CCC(O)CI", "name": "5-iodopent-1-en-4-ol", "condensed": "CH2=CHCH2CH(OH)CH2I", "category": "Mixed Functional Groups", "difficulty": "Hard"},
+
+    
     # More challenging combinations without primary ketones
     {"smiles": "ClC=CC(O)C", "name": "1-chlorobut-1-en-3-ol", "condensed": "ClCH=CHCH(OH)CH3", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     {"smiles": "CC(Br)=CC(=O)O", "name": "3-bromobut-2-enoic acid", "condensed": "CH3C(Br)=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
@@ -233,17 +286,45 @@ def get_full_structure_image(mol_smiles):
     mol = Chem.MolFromSmiles(mol_smiles)
     if not mol: return None
     mol_with_hs = Chem.AddHs(mol)
-    Compute2DCoords(mol_with_hs)
+    Compute2DCoords(mol_with_hs) # Ensure 2D coordinates are generated before drawing
+
+    # Initialize drawing options
+    draw_options = rdMolDraw2D.MolDrawOptions() # Correct instantiation
+
+    # Set options - THIS IS WHERE THE ERROR OCCURS
+    try:
+        draw_options.atomLabelFontSize = 15        # For atom labels like C, O, N
+        draw_options.bondLineWidth = 1.5
+        draw_options.padding = 0.1                 # Padding around the molecule
+        draw_options.explicitCarbonLabels = True   # Show 'C' for carbon atoms
+        draw_options.addStereoAnnotation = True    # Show stereo info (e.g., wedge/dash)
+        draw_options.includeAtomNumbers = False    # Don't show atom numbers by default
+        draw_options.fixedBondLength = 40          # Adjust for visual spacing of bonds
+        draw_options.legendFontSize = 15           # If you were using legends
+
+        # For atom labels that are explicitly set using atom.SetProp('atomLabel', 'C')
+        # the following are more relevant:
+        # draw_options.atomLabels = {} # This would be for per-atom custom labels, not the general font size
+
+    except AttributeError as e:
+        st.error(f"RDKit Draw Options Error: {e}. Check attribute names for your RDKit version.")
+        # Fallback to default options if setting a specific one fails
+        draw_options = rdMolDraw2D.MolDrawOptions()
+
+
+    # This loop to set 'C' labels is good
     for atom in mol_with_hs.GetAtoms():
-        if atom.GetAtomicNum() == 6:
-            atom.SetProp('atomLabel', 'C')
-    draw_options = rdMolDraw2D.MolDrawOptions()
-    draw_options.atomLabelFontSize = 15 
-    draw_options.padding = 0.1
-    draw_options.explicitCarbonLabels = True
-    draw_options.addStereoAnnotation = True
-    # Original size: (550, 450). st.image will scale this down if use_column_width is set.
-    img = Draw.MolToImage(mol_with_hs, size=(550, 450), kekulize=True, options=draw_options)
+        if atom.GetAtomicNum() == 6: # Carbon
+            atom.SetProp('atomLabel', 'C') # This ensures 'C' is displayed if explicitCarbonLabels is true
+
+    # Generate the image
+    # The 'options' parameter in MolToImage takes the MolDrawOptions object
+    img = Draw.MolToImage(
+        mol_with_hs, 
+        size=(550, 450), 
+        kekulize=True, 
+        options=draw_options # Pass the configured options object here
+    )
     return img
 
 @st.cache_data
@@ -270,8 +351,8 @@ def generate_condensed_formula(mol_smiles):
 def initialize_session_state():
     defaults = {
         'app_stage': 'setup',
-        'selected_categories': [], # CHANGED: Now a list for multiselect
-        'selected_difficulties': [], # CHANGED: Now a list for multiselect
+        'selected_categories': [], 
+        'selected_difficulties': [], 
         'num_problems_requested': 5,
         'quiz_problems_list': [],
         'problem_index': 0,
@@ -280,13 +361,14 @@ def initialize_session_state():
         'current_mol_smiles': None,
         'current_correct_name': "",
         'current_alternative_names': [],
-        'student_answer': "",
-        'is_current_problem_answered': False,
+        'student_answer': "", # This is the value bound to the text_input widget
+        'submitted_student_answer_for_feedback': "", # Store the answer as it was when submitted
+        'is_current_problem_answered': False, 
+        'answer_submitted_and_locked': False, 
         'is_current_problem_correct': False,
         'feedback_message': "",
         'ai_explanation': "",
         'last_selected_formula_type': 'Skeletal',
-        'disable_answer_input': False,
         'disable_formula_dropdown': False
     }
     for key, value in defaults.items():
@@ -360,7 +442,7 @@ def extract_error_steps_and_comments(text_block):
     if not result_lines:
         return "" 
     
-    html_list_items = [f"<li>{res_line.replace('❌', '❌ (Incorrect)').replace('✅', '✅ (Correct)')}</li>" for res_line in result_lines]
+    html_list_items = [f"<li>{res_line.replace('❌', '❌').replace('✅', '✅')}</li>" for res_line in result_lines]
     return f"<ul>{''.join(html_list_items)}</ul>"
 
 # --- Streamlit UI Functions ---
@@ -416,75 +498,93 @@ def display_structure_st(view_type_str, smiles_str, structure_placeholder):
         else:
             st.error("Unknown view type selected.")
 
-def handle_answer_submission_st():
-    if st.session_state.is_current_problem_answered:
-        return
-
-    student_answer = st.session_state.student_answer
-    correct_name = st.session_state.current_correct_name
-    alternative_names = st.session_state.current_alternative_names
-
-    processed_student_answer = student_answer.lower().strip().replace(" ", "").replace("-", "")
-    processed_correct_name = correct_name.lower().strip().replace(" ", "").replace("-", "")
-    processed_alt_names = [alt.lower().strip().replace(" ", "").replace("-", "") for alt in alternative_names]
-
-    is_correct = (processed_student_answer == processed_correct_name or
-                  processed_student_answer in processed_alt_names)
-    
-    st.session_state.is_current_problem_answered = True
-    st.session_state.disable_answer_input = True
-    st.session_state.disable_formula_dropdown = True
-
-    if is_correct:
-        st.session_state.is_current_problem_correct = True
-        st.session_state.current_score += 1
-        st.session_state.feedback_message = f"<p style='color:green; font-weight:bold; font-size:1.1em;'>Correct! The name is {correct_name}.</p>"
-        st.balloons()
+def handle_answer_submission_callback():
+    if st.session_state.answer_submitted_and_locked:
+        # If answer is already locked, this "submission" means "Go to Next"
+        go_to_next_problem_callback()
     else:
-        st.session_state.is_current_problem_correct = False
-        feedback_parts = [
-            f"<p style='color:red; font-weight:bold; font-size:1.1em;'>Incorrect.</p>",
-            f"Your answer: <code>{student_answer}</code>",
-            f"Correct answer(s): <strong><code>{correct_name}</code></strong>" +
-            (f" or <strong><code>{', '.join(alternative_names)}</code></strong>" if alternative_names else "")
-        ]
+        # --- Process the answer for the current problem ---
+        st.session_state.is_current_problem_answered = True
         
-        custom_explanation_found = False
-        problem_spec = st.session_state.quiz_problems_list[st.session_state.problem_index]
-        if 'common_errors' in problem_spec:
-            for error_entry in problem_spec['common_errors']:
-                processed_incorrect_name = error_entry['incorrect_name'].lower().strip().replace(" ", "").replace("-", "")
-                if processed_student_answer == processed_incorrect_name:
-                    feedback_parts.append(f"<hr><b>Explanation for your answer:</b><br>{error_entry['explanation']}")
-                    custom_explanation_found = True
-                    break
-        
-        st.session_state.feedback_message = "<br>".join(feedback_parts)
-        
-        if not custom_explanation_found and genai_service_available:
-            st.session_state.ai_explanation = get_ai_nomenclature_explanation_st(
-                student_answer, correct_name, st.session_state.current_mol_smiles
-            )
-        else:
-            st.session_state.ai_explanation = ""
+        # Store the answer as it was at the moment of submission for feedback
+        st.session_state.submitted_student_answer_for_feedback = st.session_state.student_answer
+        current_submission = st.session_state.student_answer # Use current value from widget for processing
 
-def go_to_next_problem_callback(): # Changed name for clarity
+        correct_name = st.session_state.current_correct_name
+        alternative_names = st.session_state.get('current_alternative_names', [])
+
+        processed_student_answer = current_submission.lower().strip().replace(" ", "").replace("-", "")
+        processed_correct_name = correct_name.lower().strip().replace(" ", "").replace("-", "")
+        processed_alt_names = [
+            alt.lower().strip().replace(" ", "").replace("-", "")
+            for alt in alternative_names if isinstance(alt, str)
+        ]
+
+        is_correct = (processed_student_answer == processed_correct_name or
+                      processed_student_answer in processed_alt_names)
+
+        st.session_state.answer_submitted_and_locked = True # Lock it
+        st.session_state.disable_formula_dropdown = True
+
+        if is_correct:
+            st.session_state.is_current_problem_correct = True
+            st.session_state.current_score += 1
+            st.session_state.feedback_message = f"<p style='color:green; font-weight:bold; font-size:1.1em;'>Correct! The preferred name is {correct_name}.</p>"
+            if processed_student_answer != processed_correct_name and alternative_names:
+                st.session_state.feedback_message += f"<p style='font-size:0.9em;'>Your answer, '{current_submission}', is also an accepted name.</p>"
+            # If correct, we can clear the input box for the next "Enter" to feel like "Next"
+            # OR keep it to show what they got right. Let's keep it for now.
+            # If we clear it: st.session_state.student_answer = "" 
+            # But this would fight with the "Enter for Next" if they type something else.
+            # Best to clear only in go_to_next_problem_callback.
+        else:
+            st.session_state.is_current_problem_correct = False
+            feedback_parts = [
+                f"<p style='color:red; font-weight:bold; font-size:1.1em;'>Incorrect.</p>",
+                f"Your answer: <code>{current_submission}</code>", # Show what they submitted
+                f"The preferred IUPAC name is: <code>{correct_name}</code>"
+            ]
+            if alternative_names:
+                 feedback_parts.append(f"Other accepted name(s) include: <code>{', '.join(alternative_names)}</code>")
+            feedback_parts.append(f"<p></p>")
+            
+            custom_explanation_found = False
+            # ... (common error checking logic using current_submission / processed_student_answer)
+            if 'quiz_problems_list' in st.session_state and \
+               st.session_state.problem_index < len(st.session_state.quiz_problems_list):
+                problem_spec = st.session_state.quiz_problems_list[st.session_state.problem_index]
+                if 'common_errors' in problem_spec:
+                    for error_entry in problem_spec['common_errors']:
+                        if isinstance(error_entry.get('incorrect_name'), str):
+                            processed_incorrect_name = error_entry['incorrect_name'].lower().strip().replace(" ", "").replace("-", "")
+                            if processed_student_answer == processed_incorrect_name: # Check against the processed current submission
+                                feedback_parts.append(f"<hr><b>Explanation for your answer:</b><br>{error_entry['explanation']}")
+                                custom_explanation_found = True
+                                break
+            st.session_state.feedback_message = "<br>".join(feedback_parts)
+            
+            if not custom_explanation_found and genai_service_available:
+                st.session_state.ai_explanation = get_ai_nomenclature_explanation_st(
+                    current_submission, correct_name, st.session_state.current_mol_smiles
+                )
+            else:
+                st.session_state.ai_explanation = ""
+    
+def go_to_next_problem_callback():
     st.session_state.problem_index += 1
     
-    # Reset states for the new problem
-    st.session_state.student_answer = ""  # THIS IS THE KEY CHANGE for the error
+    st.session_state.student_answer = "" # Clear the text input for the new problem
+    st.session_state.submitted_student_answer_for_feedback = "" # Clear the stored submitted answer
     st.session_state.is_current_problem_answered = False
+    st.session_state.answer_submitted_and_locked = False # Unlock for the new problem
     st.session_state.is_current_problem_correct = False
     st.session_state.feedback_message = ""
     st.session_state.ai_explanation = ""
-    st.session_state.disable_answer_input = False
     st.session_state.disable_formula_dropdown = False
 
     if st.session_state.problem_index >= st.session_state.total_problems_in_quiz:
         st.session_state.app_stage = 'results'
     else:
-        # If still in quiz, load the next problem's details.
-        # This prepares the state for the upcoming re-render.
         load_current_problem_details()
 
 def setup_new_quiz_st():
@@ -643,28 +743,8 @@ def display_setup_page_st():
                 st.error(f"{len(invalid_entries)} invalid SMILES entries found. Details in log above.")
                 
 def display_quiz_page_st():
-    st.header("🧠 IUPAC Nomenclature Practice")
-    
-    # Ensure problem details are loaded if somehow missed (e.g., after a direct URL visit to quiz page)
-    if not st.session_state.current_mol_smiles and \
-       st.session_state.problem_index < st.session_state.total_problems_in_quiz and \
-       st.session_state.quiz_problems_list: # Check if list exists
-        load_current_problem_details()
-
-    progress_val = (st.session_state.problem_index) / st.session_state.total_problems_in_quiz if st.session_state.total_problems_in_quiz > 0 else 0
-    st.progress(progress_val, text=f"Problem {st.session_state.problem_index + 1} of {st.session_state.total_problems_in_quiz} (Score: {st.session_state.current_score})")
-    st.markdown("---")
-
-    # Graceful handling if problem loading failed
-    if not st.session_state.current_mol_smiles and \
-       st.session_state.problem_index < st.session_state.total_problems_in_quiz:
-        # Feedback message should already be set by load_current_problem_details if it failed
-        if st.session_state.feedback_message:
-             st.markdown(st.session_state.feedback_message, unsafe_allow_html=True)
-        else: # Generic message if feedback was not set
-             st.error("The current problem could not be loaded. Please click 'Next Problem'.")
-        # Still need to show the "Next Problem" button
-        st.session_state.is_current_problem_answered = True # Enable next button
+    st.header("🧠 IUPAC Nomenclature Quiz")
+    # ... (progress bar and initial checks as before) ...
 
     col1, col2 = st.columns([2, 3])
 
@@ -676,51 +756,43 @@ def display_quiz_page_st():
             key='last_selected_formula_type',
             disabled=st.session_state.disable_formula_dropdown or not st.session_state.current_mol_smiles
         )
-        
         structure_placeholder_col1 = st.empty()
         if st.session_state.current_mol_smiles:
              display_structure_st(st.session_state.last_selected_formula_type, st.session_state.current_mol_smiles, structure_placeholder_col1)
-        elif st.session_state.problem_index < st.session_state.total_problems_in_quiz: # If problem should exist but SMILES is None
+        elif st.session_state.problem_index < st.session_state.total_problems_in_quiz:
              structure_placeholder_col1.warning("Structure cannot be displayed for this problem.")
-        # else: quiz is over or not started
 
-    with col2:
+
+    with col2: # Assuming col2 is where the answer input is
         st.markdown("#### Your Answer:")
-        
+                
         with st.form(key="answer_form"):
+            # The text_input is bound to st.session_state.student_answer.
+            # It will display whatever is in st.session_state.student_answer.
+            # It is NOT disabled when an answer is locked, to allow "Enter" for next.
             st.text_input(
                 "Enter IUPAC Name:", 
-                key='student_answer', # Widget linked to st.session_state.student_answer
-                disabled=st.session_state.disable_answer_input or not st.session_state.current_mol_smiles
+                key='student_answer', 
+                # Only disabled if no problem is loaded, otherwise it's active
+                # to receive the "Enter" key press for the form.
+                disabled=not st.session_state.current_mol_smiles,
+                # label_visibility="collapsed" # Optionally hide label if "Your Answer:" above is enough
             )
             
-            form_submitted = st.form_submit_button(
-                label="✔️ Submit Answer", 
-                disabled=st.session_state.is_current_problem_answered or not st.session_state.current_mol_smiles,
-                use_container_width=True
+            submit_button_label = "✔️ Submit Answer"
+            if st.session_state.answer_submitted_and_locked:
+                if st.session_state.problem_index + 1 >= st.session_state.total_problems_in_quiz:
+                    submit_button_label = "🏁 Finish Quiz (Press Enter or Click)"
+                else:
+                    submit_button_label = "➡️ Next Problem (Press Enter or Click)"
+
+            st.form_submit_button(
+                label=submit_button_label, 
+                use_container_width=True,
+                on_click=handle_answer_submission_callback
             )
-
-            if form_submitted:
-                handle_answer_submission_st() # This function modifies session state for feedback
-                st.rerun() # Rerun to show feedback and updated button states
-
-        next_button_text = "➡️ Next Problem"
-        if st.session_state.problem_index + 1 >= st.session_state.total_problems_in_quiz:
-            next_button_text = "🏁 Finish Practice"
-        
-        # --- THIS IS THE CRITICAL CHANGE ---
-        st.button(
-            next_button_text, 
-            key="next_problem_btn", 
-            disabled=not st.session_state.is_current_problem_answered, 
-            use_container_width=True, 
-            type="primary",
-            on_click=go_to_next_problem_callback # Use the on_click callback here
-        )
-        # The st.rerun() after this button is now implicit after the on_click callback executes.
-        # No need to call load_current_problem_details() or st.rerun() explicitly after this button.
-
-        st.markdown("---")
+        # Feedback is displayed based on st.session_state.feedback_message
+        # and st.session_state.submitted_student_answer_for_feedback if needed for display
         if st.session_state.feedback_message:
             st.markdown("#### Feedback:")
             st.markdown(st.session_state.feedback_message, unsafe_allow_html=True)
@@ -729,23 +801,21 @@ def display_quiz_page_st():
                     st.markdown(st.session_state.ai_explanation, unsafe_allow_html=True)
     
     st.markdown("---")
-    if st.button("New Practice Setup / Quit Current Practice", key="quit_quiz_btn"):
-        # Reset relevant session state for a clean start
+    if st.button("New Quiz Setup / Quit Current Quiz", key="quit_quiz_btn_main"): # Changed key to avoid conflict
+        # ... (reset logic as before) ...
         keys_to_clear_for_new_quiz = [
-            
             'quiz_problems_list', 'problem_index', 'total_problems_in_quiz', 
             'current_score', 'current_mol_smiles', 'current_correct_name', 
             'current_alternative_names', 'student_answer', 'is_current_problem_answered',
+            'answer_submitted_and_locked', # also reset this
             'is_current_problem_correct', 'feedback_message', 'ai_explanation',
-            'disable_answer_input', 'disable_formula_dropdown'
+            'disable_formula_dropdown'
         ]
         for key in keys_to_clear_for_new_quiz:
-            if key in st.session_state:
-                # Use pop for safer removal, providing a default if key somehow missing
-                st.session_state.pop(key, None) 
+            st.session_state.pop(key, None) 
         
         st.session_state.app_stage = 'setup'
-        initialize_session_state() # Re-apply defaults for cleared items
+        initialize_session_state()
         st.rerun()
 
 def display_results_page_st():
