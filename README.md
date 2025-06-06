@@ -1,4 +1,3 @@
-```markdown
 # 🧪 Organic Nomenclature Practice for HKDSE Chemistry
 
 An interactive web application designed to help secondary school students, particularly those preparing for the HKDSE Chemistry exam, master the art of IUPAC nomenclature for organic compounds. This tool provides a dynamic and engaging way to practice naming a wide range of molecules.
@@ -96,5 +95,4 @@ This app is ideal for deployment on the Streamlit Community Cloud, allowing you 
 1.  Push your project to a GitHub repository.
 2.  Sign up for Streamlit Community Cloud and connect your GitHub account.
 3.  Deploy your app and remember to add your `GENAI_API_KEY` in the advanced settings under "Secrets".
-
 ```
