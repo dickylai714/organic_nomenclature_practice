@@ -2,10 +2,10 @@
 
 An interactive web application designed to help secondary school students, particularly those preparing for the HKDSE Chemistry exam, master the art of IUPAC nomenclature for organic compounds. This tool provides a dynamic and engaging way to practice naming a wide range of molecules.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://organic-nomenclature-practice.streamlit.app/)
 *(Replace the link above with your actual Streamlit Community Cloud URL)*
 
-![App Screenshot](https://i.imgur.com/your-screenshot.png)
+![App Screenshot](https://imgur.com/a/BB6tJVq)
 *(Suggestion: Add a screenshot of your app here)*
 
 ## ✨ Features
