@@ -341,7 +341,6 @@ def validate_smiles_in_practice_problems(problems_list):
 
     validation_messages.append("--- Validation Complete ---")
     return invalid_smiles_entries, validation_messages
-
 # --- Structure Generation Functions ---
 @st.cache_data
 def get_full_structure_image(mol_smiles):
