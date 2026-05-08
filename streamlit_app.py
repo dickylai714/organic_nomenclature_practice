@@ -280,7 +280,7 @@ practice_problems = [
     # Here, "ene" retains its "e" because "diol" starts with a "d"
     {"smiles": "OCC=CC=CCO", "name": "hexa-2,4-diene-1,6-diol", "condensed": "HOCH2CH=CHCH=CHCH2OH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     # Here, "ene" retains its "e" because "dioic acid" starts with a "d"
-    {"smiles": "O=C(O)C=CC=CC(=O)O", "name": "hexa-2,4-dienedioic acid", "condensed": "HOOCCH=CHCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"}
+    {"smiles": "O=C(O)C=CC=CC(=O)O", "name": "hexa-2,4-dienedioic acid", "condensed": "HOOCCH=CHCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     
      # === S5 Placeholders ===
     {"smiles": "CC(=O)C", "name": "propanone", "condensed": "CH3COCH3", "category": "Ketone", "difficulty": "Medium"},
