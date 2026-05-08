@@ -22,7 +22,7 @@ st.set_page_config(page_title="Chemistry Quiz", layout="wide", initial_sidebar_s
 
 try:
     api_key_to_use = st.secrets.get("GENAI_API_KEY")
-    gemini_model_name = st.secrets.get("GENAI_MODEL_NAME", "gemini-2.0-flash") # Allow model override via secrets
+    gemini_model_name = st.secrets.get("GENAI_MODEL_NAME", "gemini-2.5-flash-lite") # Allow model override via secrets
 
     if not api_key_to_use:
         # Fallback to your provided key if not in secrets - use with caution
