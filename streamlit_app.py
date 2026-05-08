@@ -18,6 +18,37 @@ from google import genai
 # Create a .streamlit/secrets.toml file with:
 # GENAI_API_KEY = "YOUR_API_KEY"
 
+# --- 1. Define Category Levels & Data ---
+S4_CATEGORIES = [
+    "Straight-chain Alkane", "Branched Alkane", "Alkene", 
+    "Haloalkane", "Alkanol", "Carboxylic Acid", "Mixed Functional Groups"
+]
+
+S5_CATEGORIES = ["Ketone", "Aldehyde", "Primary Amine", "Unsubstituted Amide", "Ester"]
+ALL_CATEGORIES = S4_CATEGORIES + S5_CATEGORIES
+
+# --- 2. Format Function for Color Coding ---
+def format_category_label(category):
+    if category in S4_CATEGORIES:
+        return f"🟢 {category} (S4)"
+    elif category in S5_CATEGORIES:
+        return f"🟣 {category} (S5)"
+    return category
+
+# --- 3. Session State Initialization ---
+if 'score' not in st.session_state:
+    st.session_state.score = 0
+if 'total_attempted' not in st.session_state:
+    st.session_state.total_attempted = 0
+if 'current_q' not in st.session_state:
+    st.session_state.current_q = None
+if 'answered' not in st.session_state:
+    st.session_state.answered = False
+if 'feedback_msg' not in st.session_state:
+    st.session_state.feedback_msg = ""
+if 'feedback_type' not in st.session_state:
+    st.session_state.feedback_type = ""
+
 st.set_page_config(page_title="Chemistry Quiz", layout="wide", initial_sidebar_state="collapsed")
 
 try:
@@ -251,6 +282,13 @@ practice_problems = [
     # Here, "ene" retains its "e" because "dioic acid" starts with a "d"
     {"smiles": "O=C(O)C=CC=CC(=O)O", "name": "hexa-2,4-dienedioic acid", "condensed": "HOOCCH=CHCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"}
     
+     # === S5 Placeholders ===
+    {"smiles": "CC(=O)C", "name": "propanone", "condensed": "CH3COCH3", "category": "Ketone", "difficulty": "Medium"},
+    {"smiles": "CC=O", "name": "ethanal", "condensed": "CH3CHO", "category": "Aldehyde", "difficulty": "Medium"},
+    {"smiles": "CN", "name": "methanamine", "condensed": "CH3NH2", "category": "Primary Amine", "difficulty": "Easy"},
+    {"smiles": "CC(=O)N", "name": "ethanamide", "condensed": "CH3CONH2", "category": "Unsubstituted Amide", "difficulty": "Medium"},
+    {"smiles": "CC(=O)OC", "name": "methyl ethanoate", "condensed": "CH3COOCH3", "category": "Ester", "difficulty": "Medium"},
+
 ]
 
 
