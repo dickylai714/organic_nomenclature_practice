@@ -227,6 +227,30 @@ practice_problems = [
     {"smiles": "CC(Cl)=CCC(=O)O", "name": "4-chloropent-3-enoic acid", "condensed": "CH3C(Cl)=CHCH2COOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     {"smiles": "CC(I)C=C", "name": "3-iodobut-1-ene", "condensed": "CH3CH(I)CH=CH2", "category": "Mixed Functional Groups", "difficulty": "Hard"}, # Alkene double bond gets lower number if choice
     {"smiles": "O=C(O)C=CC(=O)O", "name": "butenedioic acid", "condensed": "HOOCCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
+    
+    # === Dienes (Focusing on the addition of "a" to the parent chain) ===
+    {"smiles": "C=CC=CCCC", "name": "hexa-1,3-diene", "condensed": "CH2=CHCH=CHCH2CH3", "category": "Alkene", "difficulty": "Hard"},
+    {"smiles": "C=CCCCC=C", "name": "hexa-1,5-diene", "condensed": "CH2=CHCH2CH2CH=CH2", "category": "Alkene", "difficulty": "Hard"},
+    {"smiles": "CC=CC=CC", "name": "hexa-2,4-diene", "condensed": "CH3CH=CHCH=CHCH3", "category": "Alkene", "difficulty": "Hard"},
+    {"smiles": "C=C(C)C(C)=C", "name": "2,3-dimethylbuta-1,3-diene", "condensed": "CH2=C(CH3)C(CH3)=CH2", "category": "Alkene", "difficulty": "Hard"},
+
+    # === Diols (Focusing on retaining the "e" in the alkane parent name) ===
+    {"smiles": "OCCCCCO", "name": "pentane-1,5-diol", "condensed": "HOCH2CH2CH2CH2CH2OH", "category": "Alkanol", "difficulty": "Hard"},
+    {"smiles": "OCCCCCCO", "name": "hexane-1,6-diol", "condensed": "HOCH2(CH2)4CH2OH", "category": "Alkanol", "difficulty": "Hard"},
+    {"smiles": "CC(O)CCC(O)C", "name": "hexane-2,5-diol", "condensed": "CH3CH(OH)CH2CH2CH(OH)CH3", "category": "Alkanol", "difficulty": "Hard"},
+    {"smiles": "OCC(C)CCO", "name": "2-methylbutane-1,4-diol", "condensed": "HOCH2CH(CH3)CH2CH2OH", "category": "Alkanol", "difficulty": "Hard"},
+
+    # === Dioic Acids (Focusing on retaining the "e" in the alkane parent name) ===
+    {"smiles": "O=C(O)CCCCC(=O)O", "name": "hexanedioic acid", "condensed": "HOOC(CH2)4COOH", "category": "Carboxylic Acid", "difficulty": "Hard", "alternative_names": ["adipic acid"]},
+    {"smiles": "O=C(O)CC(C)C(=O)O", "name": "2-methylbutanedioic acid", "condensed": "HOOCCH2CH(CH3)COOH", "category": "Carboxylic Acid", "difficulty": "Hard"},
+    {"smiles": "O=C(O)C(C)(C)C(=O)O", "name": "2,2-dimethylpropanedioic acid", "condensed": "HOOCC(CH3)2COOH", "category": "Carboxylic Acid", "difficulty": "Hard"},
+
+    # === Mixed Difficult Cases (Testing multiple consonant/vowel rules simultaneously) ===
+    # Here, "ene" retains its "e" because "diol" starts with a "d"
+    {"smiles": "OCC=CC=CCO", "name": "hexa-2,4-diene-1,6-diol", "condensed": "HOCH2CH=CHCH=CHCH2OH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
+    # Here, "ene" retains its "e" because "dioic acid" starts with a "d"
+    {"smiles": "O=C(O)C=CC=CC(=O)O", "name": "hexa-2,4-dienedioic acid", "condensed": "HOOCCH=CHCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"}
+    
 ]
 
 
