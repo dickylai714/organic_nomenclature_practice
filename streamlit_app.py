@@ -46,7 +46,7 @@ S4_CATEGORIES = [
     "Haloalkane", "Alkanol", "Carboxylic Acid", "Mixed Functional Groups"
 ]
 
-S5_CATEGORIES = ["Aldehyde & Ketone", "Primary Amine", "Unsubstituted Amide", "Ester"]
+S5_CATEGORIES = ["Ketone", "Aldehyde", "Primary Amine", "Unsubstituted Amide", "Ester"]
 
 ALL_CATEGORIES = S4_CATEGORIES + S5_CATEGORIES
 
@@ -185,6 +185,7 @@ def initialize_session_state():
         'is_current_problem_answered': False, 
         'answer_submitted_and_locked': False, 
         'is_current_problem_correct': False,
+        'show_celebration': False,
         'feedback_message': "",
         'ai_explanation': "",
         'last_selected_formula_type': 'Skeletal',
@@ -338,6 +339,7 @@ def handle_answer_submission_callback():
 
         if is_correct:
             st.session_state.is_current_problem_correct = True
+            st.session_state.show_celebration = True
             st.session_state.current_score += 1
             st.session_state.feedback_message = f"<p style='color:green; font-weight:bold; font-size:1.1em;'>Correct! The preferred name is {correct_name}.</p>"
             if processed_student_answer != processed_correct_name and alternative_names:
@@ -382,6 +384,7 @@ def go_to_next_problem_callback():
     st.session_state.is_current_problem_answered = False
     st.session_state.answer_submitted_and_locked = False 
     st.session_state.is_current_problem_correct = False
+    st.session_state.show_celebration = False
     st.session_state.feedback_message = ""
     st.session_state.ai_explanation = ""
     st.session_state.disable_formula_dropdown = False
@@ -433,6 +436,7 @@ def setup_new_quiz_st():
     st.session_state.student_answer = ""
     st.session_state.is_current_problem_answered = False
     st.session_state.is_current_problem_correct = False
+    st.session_state.show_celebration = False
     st.session_state.feedback_message = ""
     st.session_state.ai_explanation = ""
     st.session_state.disable_answer_input = False
@@ -572,6 +576,11 @@ def display_quiz_page_st():
         if st.session_state.feedback_message:
             st.markdown("#### Feedback:")
             st.markdown(st.session_state.feedback_message, unsafe_allow_html=True)
+            
+            if st.session_state.get('show_celebration', False):
+                st.balloons()
+                st.session_state.show_celebration = False
+                
             if st.session_state.ai_explanation:
                 with st.expander("💡 AI Explanation (Beta)", expanded=not st.session_state.is_current_problem_correct):
                     st.markdown(st.session_state.ai_explanation, unsafe_allow_html=True)
@@ -583,7 +592,7 @@ def display_quiz_page_st():
             'current_score', 'current_mol_smiles', 'current_correct_name', 
             'current_alternative_names', 'student_answer', 'is_current_problem_answered',
             'answer_submitted_and_locked', 
-            'is_current_problem_correct', 'feedback_message', 'ai_explanation',
+            'is_current_problem_correct', 'show_celebration', 'feedback_message', 'ai_explanation',
             'disable_formula_dropdown', 'selected_categories_formatted'
         ]
         for key in keys_to_clear_for_new_quiz:
@@ -617,7 +626,7 @@ def display_results_page_st():
             'quiz_problems_list', 'problem_index', 'total_problems_in_quiz', 
             'current_score', 'current_mol_smiles', 'current_correct_name', 
             'current_alternative_names', 'student_answer', 'is_current_problem_answered',
-            'is_current_problem_correct', 'feedback_message', 'ai_explanation',
+            'is_current_problem_correct', 'show_celebration', 'feedback_message', 'ai_explanation',
             'disable_answer_input', 'disable_formula_dropdown', 'selected_categories_formatted'
         ]
         for key in keys_to_clear_for_restart:
