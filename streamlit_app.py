@@ -48,12 +48,19 @@ S4_CATEGORIES = [
 
 S5_CATEGORIES = ["Ketone", "Aldehyde", "Primary Amine", "Unsubstituted Amide", "Ester"]
 
+ALL_CATEGORIES = S4_CATEGORIES + S5_CATEGORIES
+
 def format_category_label(category):
     if category in S4_CATEGORIES:
         return f"🟢 {category} (S4)"
     elif category in S5_CATEGORIES:
         return f"🟣 {category} (S5)"
     return category
+
+# Hardcode the options directly so Streamlit has to render the emojis
+FORMATTED_ALL_CATEGORIES = [format_category_label(c) for c in ALL_CATEGORIES]
+# Create a dictionary to map the formatted strings back to raw category names
+REVERSE_CATEGORY_MAP = {format_category_label(c): c for c in ALL_CATEGORIES}
 
 # @title Validate structures (Adapted for Streamlit - console/optional UI output)
 def validate_smiles_in_practice_problems(problems_list):
@@ -163,7 +170,7 @@ def generate_condensed_formula(mol_smiles):
 def initialize_session_state():
     defaults = {
         'app_stage': 'setup',
-        'selected_categories': [], 
+        'selected_categories_formatted': [], # Updated to match new explicit text options
         'selected_difficulties': [], 
         'num_problems_requested': 5,
         'quiz_problems_list': [],
@@ -387,7 +394,9 @@ def go_to_next_problem_callback():
 def setup_new_quiz_st():
     filtered_problems = list(practice_problems) 
     
-    selected_cats = st.session_state.get('selected_categories', [])
+    selected_cats_formatted = st.session_state.get('selected_categories_formatted', [])
+    # Map the formatted names back to their original names for filtering
+    selected_cats = [REVERSE_CATEGORY_MAP[c] for c in selected_cats_formatted]
     selected_diffs = st.session_state.get('selected_difficulties', [])
 
     if selected_cats: 
@@ -462,34 +471,19 @@ def display_setup_page_st():
     st.header("🧪 Organic Chemistry Nomenclature Practice Setup")
     st.markdown("---")
 
-    seen_categories_set = set()
-    ordered_categories_options = [
-        p['category'] for p in practice_problems 
-        if p.get('category') and p['category'] not in seen_categories_set 
-        and not seen_categories_set.add(p['category'])
-    ]
-    
-    seen_difficulties_set = set()
-    ordered_difficulties_options = [
-        p['difficulty'] for p in practice_problems 
-        if p.get('difficulty') and p['difficulty'] not in seen_difficulties_set 
-        and not seen_difficulties_set.add(p['difficulty'])
-    ]
-    
     max_possible_problems = max(len(practice_problems), 1)
 
     cols_setup = st.columns([2,2,1])
     with cols_setup[0]:
       st.multiselect( 
           "Select Categories (leave blank for Any):", 
-          options=ordered_categories_options, 
-          format_func=format_category_label,
-          key="selected_categories" 
+          options=FORMATTED_ALL_CATEGORIES, # Directly use formatted labels
+          key="selected_categories_formatted" 
       )
     with cols_setup[1]:
       st.multiselect( 
           "Select Difficulties (leave blank for Any):", 
-          options=ordered_difficulties_options, 
+          options=["Easy", "Medium", "Hard"], 
           key="selected_difficulties" 
       )
     with cols_setup[2]:
@@ -581,7 +575,7 @@ def display_quiz_page_st():
             'current_alternative_names', 'student_answer', 'is_current_problem_answered',
             'answer_submitted_and_locked', 
             'is_current_problem_correct', 'feedback_message', 'ai_explanation',
-            'disable_formula_dropdown'
+            'disable_formula_dropdown', 'selected_categories_formatted'
         ]
         for key in keys_to_clear_for_new_quiz:
             st.session_state.pop(key, None) 
@@ -615,7 +609,7 @@ def display_results_page_st():
             'current_score', 'current_mol_smiles', 'current_correct_name', 
             'current_alternative_names', 'student_answer', 'is_current_problem_answered',
             'is_current_problem_correct', 'feedback_message', 'ai_explanation',
-            'disable_answer_input', 'disable_formula_dropdown'
+            'disable_answer_input', 'disable_formula_dropdown', 'selected_categories_formatted'
         ]
         for key in keys_to_clear_for_restart:
             if key in st.session_state:
