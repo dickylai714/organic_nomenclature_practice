@@ -199,10 +199,52 @@ practice_problems = [
     {"smiles": "O=C(O)C=CC=CC(=O)O", "name": "hexa-2,4-dienedioic acid", "condensed": "HOOCCH=CHCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     
      # === S5 Placeholders ===
-    {"smiles": "CC(=O)C", "name": "propanone", "condensed": "CH3COCH3", "category": "Ketone", "difficulty": "Medium"},
-    {"smiles": "CC=O", "name": "ethanal", "condensed": "CH3CHO", "category": "Aldehyde", "difficulty": "Medium"},
-    {"smiles": "CN", "name": "methanamine", "condensed": "CH3NH2", "category": "Primary Amine", "difficulty": "Easy"},
-    {"smiles": "CC(=O)N", "name": "ethanamide", "condensed": "CH3CONH2", "category": "Unsubstituted Amide", "difficulty": "Medium"},
-    {"smiles": "CC(=O)OC", "name": "methyl ethanoate", "condensed": "CH3COOCH3", "category": "Ester", "difficulty": "Medium"},
+    # === Aldehyde ===
+    {"smiles": "C=O", "name": "methanal", "condensed": "HCHO", "category": "Aldehyde", "difficulty": "Easy", "alternative_names": ["formaldehyde"]},
+    {"smiles": "CC=O", "name": "ethanal", "condensed": "CH3CHO", "category": "Aldehyde", "difficulty": "Easy", "alternative_names": ["acetaldehyde"]},
+    {"smiles": "CCC=O", "name": "propanal", "condensed": "CH3CH2CHO", "category": "Aldehyde", "difficulty": "Medium"},
+    {"smiles": "CCCC=O", "name": "butanal", "condensed": "CH3CH2CH2CHO", "category": "Aldehyde", "difficulty": "Medium"},
+    {"smiles": "CC(C)C=O", "name": "2-methylpropanal", "condensed": "CH3CH(CH3)CHO", "category": "Aldehyde", "difficulty": "Medium"},
+    {"smiles": "CCCCC=O", "name": "pentanal", "condensed": "CH3CH2CH2CH2CHO", "category": "Aldehyde", "difficulty": "Hard"},
+    {"smiles": "CC(C)CC=O", "name": "3-methylbutanal", "condensed": "CH3CH(CH3)CH2CHO", "category": "Aldehyde", "difficulty": "Hard"},
+    {"smiles": "CCC(C)C=O", "name": "2-methylbutanal", "condensed": "CH3CH2CH(CH3)CHO", "category": "Aldehyde", "difficulty": "Hard"},
 
+    # === Ketone ===
+    {"smiles": "CC(=O)C", "name": "propanone", "condensed": "CH3COCH3", "category": "Ketone", "difficulty": "Easy", "alternative_names": ["acetone"]},
+    {"smiles": "CCC(=O)C", "name": "butanone", "condensed": "CH3COCH2CH3", "category": "Ketone", "difficulty": "Easy"},
+    {"smiles": "CCCC(=O)C", "name": "pentan-2-one", "condensed": "CH3COCH2CH2CH3", "category": "Ketone", "difficulty": "Medium"},
+    {"smiles": "CCC(=O)CC", "name": "pentan-3-one", "condensed": "CH3CH2COCH2CH3", "category": "Ketone", "difficulty": "Medium"},
+    {"smiles": "CCCCC(=O)C", "name": "hexan-2-one", "condensed": "CH3COCH2CH2CH2CH3", "category": "Ketone", "difficulty": "Hard"},
+    {"smiles": "CCCC(=O)CC", "name": "hexan-3-one", "condensed": "CH3CH2COCH2CH2CH3", "category": "Ketone", "difficulty": "Hard"},
+    {"smiles": "CC(C)C(=O)C", "name": "3-methylbutan-2-one", "condensed": "CH3COCH(CH3)CH3", "category": "Ketone", "difficulty": "Hard"},
+    {"smiles": "CC(C)CC(=O)C", "name": "4-methylpentan-2-one", "condensed": "CH3COCH2CH(CH3)CH3", "category": "Ketone", "difficulty": "Hard"},
+
+    # === Primary Amine ===
+    {"smiles": "CN", "name": "methanamine", "condensed": "CH3NH2", "category": "Primary Amine", "difficulty": "Easy", "alternative_names": ["methylamine"]},
+    {"smiles": "CCN", "name": "ethanamine", "condensed": "CH3CH2NH2", "category": "Primary Amine", "difficulty": "Easy", "alternative_names": ["ethylamine"]},
+    {"smiles": "CCCN", "name": "propan-1-amine", "condensed": "CH3CH2CH2NH2", "category": "Primary Amine", "difficulty": "Medium"},
+    {"smiles": "CC(N)C", "name": "propan-2-amine", "condensed": "CH3CH(NH2)CH3", "category": "Primary Amine", "difficulty": "Medium"},
+    {"smiles": "CCCCN", "name": "butan-1-amine", "condensed": "CH3CH2CH2CH2NH2", "category": "Primary Amine", "difficulty": "Medium"},
+    {"smiles": "CCC(N)C", "name": "butan-2-amine", "condensed": "CH3CH(NH2)CH2CH3", "category": "Primary Amine", "difficulty": "Hard"},
+    {"smiles": "CC(C)CN", "name": "2-methylpropan-1-amine", "condensed": "CH3CH(CH3)CH2NH2", "category": "Primary Amine", "difficulty": "Hard"},
+    {"smiles": "CC(C)(C)N", "name": "2-methylpropan-2-amine", "condensed": "CH3C(CH3)(NH2)CH3", "category": "Primary Amine", "difficulty": "Hard", "alternative_names": ["tert-butylamine"]},
+
+    # === Unsubstituted Amide ===
+    {"smiles": "NC=O", "name": "methanamide", "condensed": "HCONH2", "category": "Unsubstituted Amide", "difficulty": "Easy", "alternative_names": ["formamide"]},
+    {"smiles": "CC(=O)N", "name": "ethanamide", "condensed": "CH3CONH2", "category": "Unsubstituted Amide", "difficulty": "Easy", "alternative_names": ["acetamide"]},
+    {"smiles": "CCC(=O)N", "name": "propanamide", "condensed": "CH3CH2CONH2", "category": "Unsubstituted Amide", "difficulty": "Medium"},
+    {"smiles": "CCCC(=O)N", "name": "butanamide", "condensed": "CH3CH2CH2CONH2", "category": "Unsubstituted Amide", "difficulty": "Medium"},
+    {"smiles": "CCCCC(=O)N", "name": "pentanamide", "condensed": "CH3CH2CH2CH2CONH2", "category": "Unsubstituted Amide", "difficulty": "Hard"},
+    {"smiles": "CC(C)C(=O)N", "name": "2-methylpropanamide", "condensed": "CH3CH(CH3)CONH2", "category": "Unsubstituted Amide", "difficulty": "Hard"},
+    {"smiles": "CC(C)CC(=O)N", "name": "3-methylbutanamide", "condensed": "CH3CH(CH3)CH2CONH2", "category": "Unsubstituted Amide", "difficulty": "Hard"},
+
+    # === Ester ===
+    {"smiles": "COC=O", "name": "methyl methanoate", "condensed": "HCOOCH3", "category": "Ester", "difficulty": "Easy", "alternative_names": ["methyl formate"]},
+    {"smiles": "CC(=O)OC", "name": "methyl ethanoate", "condensed": "CH3COOCH3", "category": "Ester", "difficulty": "Easy", "alternative_names": ["methyl acetate"]},
+    {"smiles": "CCOC=O", "name": "ethyl methanoate", "condensed": "HCOOCH2CH3", "category": "Ester", "difficulty": "Medium", "alternative_names": ["ethyl formate"]},
+    {"smiles": "CC(=O)OCC", "name": "ethyl ethanoate", "condensed": "CH3COOCH2CH3", "category": "Ester", "difficulty": "Medium", "alternative_names": ["ethyl acetate"]},
+    {"smiles": "CCC(=O)OC", "name": "methyl propanoate", "condensed": "CH3CH2COOCH3", "category": "Ester", "difficulty": "Medium"},
+    {"smiles": "CCC(=O)OCC", "name": "ethyl propanoate", "condensed": "CH3CH2COOCH2CH3", "category": "Ester", "difficulty": "Hard"},
+    {"smiles": "CC(=O)OCCC", "name": "propyl ethanoate", "condensed": "CH3COOCH2CH2CH3", "category": "Ester", "difficulty": "Hard"},
+    {"smiles": "CCCC(=O)OC", "name": "methyl butanoate", "condensed": "CH3CH2CH2COOCH3", "category": "Ester", "difficulty": "Hard"}
 ]
