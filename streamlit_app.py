@@ -46,7 +46,7 @@ S4_CATEGORIES = [
     "Haloalkane", "Alkanol", "Carboxylic Acid", "Mixed Functional Groups"
 ]
 
-S5_CATEGORIES = ["Ketone", "Aldehyde", "Primary Amine", "Unsubstituted Amide", "Ester"]
+S5_CATEGORIES = ["Aldehyde & Ketone", "Primary Amine", "Unsubstituted Amide", "Ester"]
 
 ALL_CATEGORIES = S4_CATEGORIES + S5_CATEGORIES
 

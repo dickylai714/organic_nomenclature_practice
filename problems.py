@@ -199,25 +199,23 @@ practice_problems = [
     {"smiles": "O=C(O)C=CC=CC(=O)O", "name": "hexa-2,4-dienedioic acid", "condensed": "HOOCCH=CHCH=CHCOOH", "category": "Mixed Functional Groups", "difficulty": "Hard"},
     
      # === S5 Placeholders ===
-    # === Aldehyde ===
-    {"smiles": "C=O", "name": "methanal", "condensed": "HCHO", "category": "Aldehyde", "difficulty": "Easy", "alternative_names": ["formaldehyde"]},
-    {"smiles": "CC=O", "name": "ethanal", "condensed": "CH3CHO", "category": "Aldehyde", "difficulty": "Easy", "alternative_names": ["acetaldehyde"]},
-    {"smiles": "CCC=O", "name": "propanal", "condensed": "CH3CH2CHO", "category": "Aldehyde", "difficulty": "Medium"},
-    {"smiles": "CCCC=O", "name": "butanal", "condensed": "CH3CH2CH2CHO", "category": "Aldehyde", "difficulty": "Medium"},
-    {"smiles": "CC(C)C=O", "name": "2-methylpropanal", "condensed": "CH3CH(CH3)CHO", "category": "Aldehyde", "difficulty": "Medium"},
-    {"smiles": "CCCCC=O", "name": "pentanal", "condensed": "CH3CH2CH2CH2CHO", "category": "Aldehyde", "difficulty": "Hard"},
-    {"smiles": "CC(C)CC=O", "name": "3-methylbutanal", "condensed": "CH3CH(CH3)CH2CHO", "category": "Aldehyde", "difficulty": "Hard"},
-    {"smiles": "CCC(C)C=O", "name": "2-methylbutanal", "condensed": "CH3CH2CH(CH3)CHO", "category": "Aldehyde", "difficulty": "Hard"},
-
-    # === Ketone ===
-    {"smiles": "CC(=O)C", "name": "propanone", "condensed": "CH3COCH3", "category": "Ketone", "difficulty": "Easy", "alternative_names": ["acetone"]},
-    {"smiles": "CCC(=O)C", "name": "butanone", "condensed": "CH3COCH2CH3", "category": "Ketone", "difficulty": "Easy"},
-    {"smiles": "CCCC(=O)C", "name": "pentan-2-one", "condensed": "CH3COCH2CH2CH3", "category": "Ketone", "difficulty": "Medium"},
-    {"smiles": "CCC(=O)CC", "name": "pentan-3-one", "condensed": "CH3CH2COCH2CH3", "category": "Ketone", "difficulty": "Medium"},
-    {"smiles": "CCCCC(=O)C", "name": "hexan-2-one", "condensed": "CH3COCH2CH2CH2CH3", "category": "Ketone", "difficulty": "Hard"},
-    {"smiles": "CCCC(=O)CC", "name": "hexan-3-one", "condensed": "CH3CH2COCH2CH2CH3", "category": "Ketone", "difficulty": "Hard"},
-    {"smiles": "CC(C)C(=O)C", "name": "3-methylbutan-2-one", "condensed": "CH3COCH(CH3)CH3", "category": "Ketone", "difficulty": "Hard"},
-    {"smiles": "CC(C)CC(=O)C", "name": "4-methylpentan-2-one", "condensed": "CH3COCH2CH(CH3)CH3", "category": "Ketone", "difficulty": "Hard"},
+# === Aldehyde & Ketone ===
+    {"smiles": "C=O", "name": "methanal", "condensed": "HCHO", "category": "Aldehyde & Ketone", "difficulty": "Easy", "alternative_names": ["formaldehyde"]},
+    {"smiles": "CC=O", "name": "ethanal", "condensed": "CH3CHO", "category": "Aldehyde & Ketone", "difficulty": "Easy", "alternative_names": ["acetaldehyde"]},
+    {"smiles": "CCC=O", "name": "propanal", "condensed": "CH3CH2CHO", "category": "Aldehyde & Ketone", "difficulty": "Medium"},
+    {"smiles": "CCCC=O", "name": "butanal", "condensed": "CH3CH2CH2CHO", "category": "Aldehyde & Ketone", "difficulty": "Medium"},
+    {"smiles": "CC(C)C=O", "name": "2-methylpropanal", "condensed": "CH3CH(CH3)CHO", "category": "Aldehyde & Ketone", "difficulty": "Medium"},
+    {"smiles": "CCCCC=O", "name": "pentanal", "condensed": "CH3CH2CH2CH2CHO", "category": "Aldehyde & Ketone", "difficulty": "Hard"},
+    {"smiles": "CC(C)CC=O", "name": "3-methylbutanal", "condensed": "CH3CH(CH3)CH2CHO", "category": "Aldehyde & Ketone", "difficulty": "Hard"},
+    {"smiles": "CCC(C)C=O", "name": "2-methylbutanal", "condensed": "CH3CH2CH(CH3)CHO", "category": "Aldehyde & Ketone", "difficulty": "Hard"},
+    {"smiles": "CC(=O)C", "name": "propanone", "condensed": "CH3COCH3", "category": "Aldehyde & Ketone", "difficulty": "Easy", "alternative_names": ["acetone"]},
+    {"smiles": "CCC(=O)C", "name": "butanone", "condensed": "CH3COCH2CH3", "category": "Aldehyde & Ketone", "difficulty": "Easy"},
+    {"smiles": "CCCC(=O)C", "name": "pentan-2-one", "condensed": "CH3COCH2CH2CH3", "category": "Aldehyde & Ketone", "difficulty": "Medium"},
+    {"smiles": "CCC(=O)CC", "name": "pentan-3-one", "condensed": "CH3CH2COCH2CH3", "category": "Aldehyde & Ketone", "difficulty": "Medium"},
+    {"smiles": "CCCCC(=O)C", "name": "hexan-2-one", "condensed": "CH3COCH2CH2CH2CH3", "category": "Aldehyde & Ketone", "difficulty": "Hard"},
+    {"smiles": "CCCC(=O)CC", "name": "hexan-3-one", "condensed": "CH3CH2COCH2CH2CH3", "category": "Aldehyde & Ketone", "difficulty": "Hard"},
+    {"smiles": "CC(C)C(=O)C", "name": "3-methylbutan-2-one", "condensed": "CH3COCH(CH3)CH3", "category": "Aldehyde & Ketone", "difficulty": "Hard"},
+    {"smiles": "CC(C)CC(=O)C", "name": "4-methylpentan-2-one", "condensed": "CH3COCH2CH(CH3)CH3", "category": "Aldehyde & Ketone", "difficulty": "Hard"},
 
     # === Primary Amine ===
     {"smiles": "CN", "name": "methanamine", "condensed": "CH3NH2", "category": "Primary Amine", "difficulty": "Easy", "alternative_names": ["methylamine"]},
