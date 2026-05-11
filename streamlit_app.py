@@ -495,8 +495,6 @@ def display_setup_page_st():
           step=1
       )
 
-    st.markdown("### 🏷️ Legend\n* 🟢 **S4 Level** (Current)\n* 🟣 **S5 Level** (Advanced)")
-
     if st.button("🚀 Start Practice", type="primary", use_container_width=True):
         setup_new_quiz_st()
         if st.session_state.app_stage == 'quiz':
@@ -519,6 +517,17 @@ def display_setup_page_st():
                 
 def display_quiz_page_st():
     st.header("🧠 IUPAC Nomenclature Quiz")
+
+    with st.expander("📝 Nomenclature Steps (Click to view)", expanded=False):
+        st.markdown("""
+        1. Identify the principal functional group.
+        2. Identify the longest continuous carbon chain.
+        3. Number the parent chain to give the principal functional group the lowest possible number.
+        4. Identify all substituents (alkyl groups, halogens, etc.) attached to the parent chain.
+        5. Name and number each substituent.
+        6. Assemble the name in the correct order.
+        7. Check for special cases like redundant number.
+        """)
 
     col1, col2 = st.columns([2, 3])
 
